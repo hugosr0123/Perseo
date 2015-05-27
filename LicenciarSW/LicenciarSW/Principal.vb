@@ -58,7 +58,7 @@
     ''' </summary>
     Private Sub Principal_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-        Dim GuidAplicacionVacioSoloEnCargaInicial As String = ""
+        Dim GuidAplicacionVacioSoloEnCargaInicial As String = "" 'Solo en la carga inicial si puede ser vacía esta cadena
 
         MiLicenciaminento = New LicenciamientoSW.VerificadorSoftware(GuidAplicacionVacioSoloEnCargaInicial)
         Me.txtDireccionMAC.Text = MiLicenciaminento.DireccionMAC
