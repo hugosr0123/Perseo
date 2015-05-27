@@ -116,13 +116,6 @@ Public Class VerificadorSoftware
             lecturaArchivoSerializado()
             conexionActiva = New OleDbConnection(MiDatosConexionBD.CadenaConexion)
 
-            ''Se elimina primero la licencia actual
-            'consulta = ("DELETE  FROM TLicencia")
-            'comando = New OleDbCommand(consulta)
-            'comando.Connection = conexionActiva
-            'conexionActiva.Open()
-            'comando.ExecuteScalar()
-
             'Agrega la nueva licencia
             consulta = "INSERT INTO TLicencia(Licencia) VALUES('" + DireccionMACEncriptada + "' ) "
             comando = New OleDbCommand(consulta)
